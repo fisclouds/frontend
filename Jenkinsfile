@@ -1,10 +1,10 @@
 pipeline {
 
   environment {
-    PROJECT = "gcp-lab-240205"
+    PROJECT = "gcp-devops-nonprod"
     APP_NAME = "hipster-frontend"
-    CLUSTER = "jenkins"
-    CLUSTER_ZONE = "us-east1-d"
+    CLUSTER = "gke-devops-cluster"
+    CLUSTER_ZONE = "asia-southeast1-b"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"
   }
